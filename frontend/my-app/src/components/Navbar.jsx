@@ -1,25 +1,37 @@
 import React from 'react'
-import { useState } from 'react'
-import {Link} from 'react-router-dom'
-import {Button} from './Button'
-import './Navbar.css';
-import Dropdown from './Dropdown'
+import './Navbar.css'
 const Navbar = () => {
-
-  const [click,setClick]=useState(false)
-  const handleClick=()=>setClick(!click)
-
   return (
     <>
-    <nav className='navbar'>
-      <Link to='/'className='navbar-logo'>EPIC</Link>
+    <h1>Navbar</h1>
+    <nav>
+        <div className="navbar">
+            <div className='logo'><a href="#">Arafath</a></div>
+            <div className="nav-links">
 
-      <div className='menu-icon'onClick={handleClick}>
-        <i className={click ? 'fas fa-times': 'fas fas-bars'}/>
-      </div>
+            <div className="sidebar-logo">
+                <span className="logo_name">Arafath</span>
+                <i className='bx bx-x'></i>
+                </div>
 
+                <ul className="links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a>
+                    <i className='bx bxs-chevron-down arrow service-arrow'></i>
+                    <ul className="service-sub-menu sub-menu">
+                        <li><a href="#">Vollenter</a></li>
+                        <li><a href="#">Transport</a></li>
+                    </ul>
+                    
+                    </li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
     </nav>
-
     </>
   )
 }
