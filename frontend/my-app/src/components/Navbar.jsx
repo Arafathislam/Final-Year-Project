@@ -3,7 +3,11 @@ import Home from './pages/Home'
 import './Navbar.css'
 class Navbar extends Component {
 
-    state={clicked:false};
+ state={clicked:false};
+
+   handleClick=()=>{
+      this.setState({clicked: !this.state.clicked})
+  }
 
 render(){
   return (
@@ -15,8 +19,8 @@ render(){
         </a>
 
         <div>
-            <ul id='navbar'>
-                <li><a  className='active'  href="#">Home</a></li>
+            <ul id='navbar' className={this.state.clicked ? "#navbar active" : "#navbar"}>
+                <li><a  className='active' href="#">Home</a></li>
                 <li><a href="#">Service</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -24,7 +28,7 @@ render(){
         </div>
 
 
-        <div id='mobile'>
+        <div id='mobile' onClick={this.handleClick}>
                 {/* <i className='fas fa-bars'></i>
                 <i className=''></i> */}
 
