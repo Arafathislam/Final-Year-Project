@@ -1,0 +1,17 @@
+/* import bangla front */
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+.home{
+    background-color: #fff;
+font-family: 'Noto Sans Bengali', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.inner{
+    overflow: hidden;
+  }
+  .inner{
+    transition: all 1.3s ease;
+  }
+  .inner:hover{
+    transform: scale(1.1);
+  }
