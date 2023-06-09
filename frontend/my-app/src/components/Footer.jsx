@@ -1,5 +1,11 @@
 import React from 'react'
 import './Footer.css'
+
+import master from '../../src/images/master.svg'
+import bkash from "../../src/images/bkash.svg"
+import nagad from "../../src/images/nagad.svg"
+import roket from "../../src/images/roket.png"
+
 const Footer = () => {
   return (
     <>
@@ -8,30 +14,48 @@ const Footer = () => {
             <div className="sub_footer section_padding">
                 <div className="sub_footer-links">
                     <div className="sub_footer-links-div">
-                            <h4>Card Payments</h4>
-                            <a href="#">done</a>
+                            <h3>Card Payments</h3>
+                            <img src={master} alt="master" />
+                            <a href="#">
+                              
+                            
+                            <h5>click here</h5>
+                            </a>
 
                     </div>
                     <div className="sub_footer-links-div">
-                            <h4>Bkash</h4>
-                            <a href="#">done</a>
+                            <h3>Bkash</h3>
+                            <img src={bkash} alt="bkash" />
+                            <a href="#">
+                             
+                              <h5>click here</h5>
+          
+                            </a>
 
                     </div>
 
                     <div className="sub_footer-links-div">
-                            <h4>Roket</h4>
-                            <a href="#">done</a>
+                            <h3>Roket</h3>
+                            <img src={roket} alt="roket" />
+                            <a href="#">
+                            
+                            <h5>click here</h5>
+                            </a>
 
                     </div>
 
                     <div className="sub_footer-links-div">
-                            <h4>Nagad</h4>
-                            <a href="#">done</a>
+                    
+                            <h3>Nagad</h3>
+                            <img src={nagad} alt="nagad" />
+                            <a href="#">
+                            <h5>click here</h5>
+                            </a>
 
                     </div>
 
 
-
+              <hr/>
 
                 <div className='sub_footer-below'>
                     <div className="sub_footer-copyright">
