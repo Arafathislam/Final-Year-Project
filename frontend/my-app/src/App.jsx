@@ -1,13 +1,30 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+
 import Footer from "./components/Footer";
+import Layout from "./components/Layout";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 import Home from "./components/pages/Home";
+import Contact from "./components/pages/Contact";
+import About from "./components/pages/About";
 function App() {
   return (
     <>
-    <Navbar/>
-    <Home/>
+
+    <BrowserRouter>
+    <Routes>
+      <Route path="/"  element={<Layout/>} >
+        <Route index element={<Home/>}/>
+        <Route path="contact" element={<Contact/>}/>
+        <Route path="about" element={<About/>}/>
+
+      </Route>
+
+
+    </Routes>
     <Footer/>
+    
+    </BrowserRouter>
+
     </>
   );
 }

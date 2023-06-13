@@ -1,7 +1,8 @@
 import React from 'react'
-import '../pages/css/home.css'
+import './css/Home.css'
 import roket from "../../images/roket.png"
 import nagad from "../../images/nagad.svg"
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 const Home = () => {
   return (
    <>        
@@ -18,9 +19,9 @@ const Home = () => {
               <a class="text-decoration-none text-dark" href="{%url 'badmintion_rule'%}">
                 <div class="inner">
                 
-                  <img src="{%static 'images/badminton.png'%}" class="card-img-top w-50" alt="..."/>
-                
-                        <p class="card-title fs-5 p-2">Badminton</p>
+                  {/* <img src="{%static 'images/badminton.png'%}" class="card-img-top w-50" alt="..."/> */}
+                  <LocalHospitalIcon sx={{color:"red"}}/>                
+                        <p class="card-title fs-5 p-2">চিকিৎসা সেবা</p>
                 </div>
                     
                     </a>

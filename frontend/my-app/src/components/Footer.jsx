@@ -1,5 +1,5 @@
 import React from 'react'
-import './Footer.css'
+import './css/Footer.css'
 
 import master from '../../src/images/master.svg'
 import bkash from "../../src/images/bkash.svg"
@@ -9,6 +9,8 @@ import roket from "../../src/images/roket.png"
 const Footer = () => {
   return (
     <>
+
+    
       <div className="footer">
                     <h2>Donate us</h2>
             <div className="sub_footer section_padding">
