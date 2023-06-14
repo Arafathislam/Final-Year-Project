@@ -36,7 +36,7 @@ const Navbar = () => {
             Services
           </Link>
           <ul className="dropdown-menu bg-color">
-            <li><Link className="dropdown-item text-color" to="#">Drivber</Link></li>
+            <li><Link className="dropdown-item text-color" to="#">Ambulance Drivber</Link></li>
             <li><Link className="dropdown-item text-color " to="#">Vollenter</Link></li>
           </ul>
         </li>
