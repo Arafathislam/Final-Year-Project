@@ -1,7 +1,6 @@
 import React from 'react'
 import './css/Home.css'
-import roket from "../../images/roket.png"
-import nagad from "../../images/nagad.svg"
+
 import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
 import DepartureBoardIcon from '@mui/icons-material/DepartureBoard';
 import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';

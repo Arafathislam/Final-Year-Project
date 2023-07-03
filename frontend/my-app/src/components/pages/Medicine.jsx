@@ -74,7 +74,7 @@ const Medicine = () => {
 
       {/* pagination here */}
 
-<div className=' d-flex justify-content-center'>
+<div className=' d-flex justify-content-center mb-10'>
   <Stack spacing={2}>
       <Pagination count={10} variant="outlined" shape="rounded" />
     </Stack>

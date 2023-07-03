@@ -6,7 +6,8 @@ import io, csv, pandas as pd
 from .serializer import *
 from rest_framework import generics
 from rest_framework import status
-
+from rest_framework.generics import ListAPIView
+from rest_framework.filters import SearchFilter
 class UploadFileView(generics.CreateAPIView):
     serializer_class = FileUploadSerializer
     
@@ -31,3 +32,11 @@ class UploadFileView(generics.CreateAPIView):
             new_file.save()
         return Response({"status": "success"},
                         status.HTTP_201_CREATED)
+
+
+
+class MedicineView(ListAPIView):
+    queryset=Medicine.objects.all()
+    serializer_class=SaveFileSerializer
+    filter_backends=[SearchFilter]
+    search_fields=['brand_name','generic']
