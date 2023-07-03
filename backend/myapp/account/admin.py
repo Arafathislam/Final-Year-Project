@@ -37,3 +37,5 @@ class UserModelAdmin(BaseUserAdmin):
 # Now register the new UserModelAdmin...
 admin.site.register(User, UserModelAdmin)
 admin.site.register(Medicine)
+# class MedicineAdmin(admin.ModelAdmin):
+#     list_display= ['brand_id','brand_name']

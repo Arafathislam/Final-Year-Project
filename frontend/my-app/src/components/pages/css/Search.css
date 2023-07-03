@@ -1,0 +1,59 @@
+  https://cdn.tailwindcss.com/3.0.12
+https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js
+
+
+.box{
+    margin: 10px;
+    padding: 10px;
+}
+.h3{
+    text-align: center;
+}
+
+
+.height{
+        height: 20vh;
+       }
+.search{
+       position: relative;
+       box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+         
+       }
+
+.search input{
+
+        height: 60px;
+        text-indent: 25px;
+        border: 2px solid #d6d4d4;
+
+
+       }
+
+
+.search input:focus{
+
+        box-shadow: none;
+        border: 2px solid blue;
+
+
+       }
+
+.search .fa-search{
+
+        position: absolute;
+        top: 20px;
+        left: 16px;
+
+       }
+
+.search button{
+
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 50px;
+        width: 110px;
+        background: blue;
+
+       }
+
